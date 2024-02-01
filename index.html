@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo--container">
+                <h2>XE</h2>
+                <div class="pvsb">
+                    <a href="/">Personal</a>
+                    |
+                    <a href="/">Business</a>
+                </div>
+            </div>
+            <div id="nav--links" class="nav--links">
+                <a href="/">Send Money</a>
+                <a href="/">Converter</a>
+                <a href="/">Currency API</a>
+                <a href="/">Tools</a>
+                <a href="/">Resources</a>
+            </div>
+            <div class="nav--buttons">
+                <a href="/">Login</a>
+                <a class="active" href="/">Register</a>
+                <i class="fa-solid fa-bars burger"></i>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h1 class="hero-heading">Trusted Global Currency Converter & Money Transfers</h1>
+            <p>Best source for currency conversion, sending money online and tracking exchange rates</p>
+            <div class="hero--main">
+                <nav>
+                    <div class="nav-wrapper nav--active"><a href="/"><i class="fa-solid fa-dollar-sign"></i> Convert</a></div>
+                    <div class="nav-wrapper"><a href="/"><i class="fa-regular fa-paper-plane"></i> Send</a></div>
+                    <div class="nav-wrapper"><a href="/"><i class="fa-solid fa-chart-line"></i> Charts</a></div>
+                    <div class="nav-wrapper"><a href="/"><i class="fa-regular fa-bell"></i> Alerts</a></div>
+                </nav>
+                <form class="hero--form" action="">
+                    <div class="input-wrapper">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">From</label>
+                        <select name="from" id="from">
+
+                        </select>
+                    </div>
+                    <i style="color: black; margin-top: 30px;" class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="input-wrapper">
+                        <label for="">To</label>
+                        <select name="to" id="to">
+
+                        </select>
+                    </div>
+                    <button class="form-button" type="submit">Convert</button>
+                </form>
+                <div class="converted-msg">
+                    <h4 class="disp-ansh4"></h4>
+                    <h2 class="disp-ansh2"></h2>
+                    <p class="disp-ansp"></p>
+                </div>
+                <div class="warning">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. <a href="/">Login to view send rates</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

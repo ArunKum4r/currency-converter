@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100vw;
+    background: #0a146e;
+}
+
+.navbar {
+    padding: 12px;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.burger {
+    display: none !important;
+}
+
+.navbar .logo--container h2 {
+    color: white;
+}
+
+.logo--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pvsb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav--links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background: #3b9afffb;
+    border-radius: 10px;
+}
+
+.active {
+    background: rgb(26, 134, 250);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+/* hero */
+
+main {
+    height: calc(100vh - 68px);
+}
+
+.hero {
+    background: #0a146e;
+    height: calc(100vh - 60%);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.hero--main {
+    width: 80%;
+    min-height: 110%;
+    max-height: max-content;
+    background: white;
+    border: 0.5px solid black;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    border-radius: 10px ;
+}
+
+.hero--main nav {
+    display: flex;
+    border-radius: 10px;  
+}
+
+.nav-wrapper {
+    width: calc(100% / 4);
+    background: #f0f5fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav--active {
+    background: white;
+}
+
+.hero--main nav a {
+    text-decoration: none;
+    color: #1e1e1e; 
+    font-size: 1rem;
+}
+
+.hero--form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    gap: 20px;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+label {
+    color: black;
+    text-align: left;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid #0a146e;
+}
+
+.hero--form button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 33px;
+    border: none;
+    background: #0a146e;
+    color: white;
+    font-weight: bold;
+}
+
+.hero--form button:hover {
+    background: #3b9afffb;
+}
+
+.warning {
+    background: #f0f5fa;
+    width: 40%;
+    border-radius: 10px;
+    height: fit-content;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.warning p {
+    font-size: 10px;
+    text-align: left;
+}
+
+.converted-msg {
+    color: black;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2.1rem;
+}
+
+.disp-ansh4 {
+    color: #5c667b;
+    font-weight: 600;
+}
+
+.disp-ansh2 {
+    font-weight: 600;
+    color: #2e3c57;
+    font-size: 40px;
+}
+
+.disp-ansp {
+    color: #5c667b;
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        width: 100vw;
+        height: 100vh;
+        max-width: fit-content;
+    }
+
+    .burger {
+        display: block !important;
+    }
+
+    .navbar {
+        margin: 0 5%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .nav--links__open {
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: white;
+        color: #0a146e;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav--links {
+        display: none;
+    }
+
+    .nav--links__open a {
+        z-index: 10;
+        color: #0a146e;
+    }
+
+    .nav--buttons {
+        gap: 15px;
+    }
+    .pvsb {
+        display: none;
+    }
+
+    .hero-heading {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+    .hero--main {
+        padding-bottom: 20px;
+    }
+
+    .hero--form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero--main nav a {
+        font-size: 10px;
+    }
+
+    .warning {
+        display: none;
+    }
+}
