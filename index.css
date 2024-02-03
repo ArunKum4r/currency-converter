@@ -217,6 +217,16 @@ input, select {
     color: #5c667b;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @media screen and (max-width: 720px) {
     main {
         width: 100vw;
